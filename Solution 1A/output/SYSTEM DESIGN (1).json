@@ -1,0 +1,1850 @@
+{
+  "title": "Introduction to System",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Introduction to System",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Design",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Introduction",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "the implementation phase",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "provides the backbone to handle exceptional scenarios because it",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Objectives of System Design",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Advantages of System Design",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "The major advantages of System Design include:",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Reduces the Design Cost of a Product: By using established design patterns and reusable",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "components, teams can lower the effort and expense associated with creating new software",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Speedy Software Development Process: Using frameworks and libraries accelerates",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "development by providing pre-built functionalities, allowing developers to focus on unique",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Saves Overall Time in SDLC: Streamlined processes and automation in the Software",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Increases Efficiency and Consistency of a Programmer: Familiar tools and",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Saves Resources: Optimized workflows and shared resources minimize the need for",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Components of a system",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Load Balancers: Distribute incoming traffic across multiple servers to optimize performance and",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Key-Value Stores: Storage systems that manage data as pairs of keys and values, often implemented",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Rate Limiters: Control the maximum number of requests a service can handle in a given timeframe to",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Distributed Messaging Queues: Mediums that facilitate communication between producers and",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Distributed Unique ID Generators: Systems that generate unique identifiers for events or tasks in a",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Distributed Search: Mechanisms that allow users to search across multiple data sources or websites for",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Distributed Logging Services: Systems that collect and trace logs across services to monitor and",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Distributed Task Schedulers: Tools that manage and allocate computational resources for executing",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "SDLC: System Design Life cycle",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "SYSTEM ARCHITECTURE",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "a design are depicted design and deployment of software. It is basically",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "the skeleton design of a software system depicting components, abstraction",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "levels, and other aspects of a software system. In order to understand it in a",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "layman's language, it is the aim or logic of a business should be crystal",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "Types of System Architecture Patterns",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "1. Client-Server Architecture Pattern: Separates the system into two",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "main components: clients that request services and servers that provide",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "2. Event-Driven Architecture Pattern: Uses events to trigger and",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "communicate between decoupled components, enhancing responsiveness",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "3. Microkernel Architecture Pattern: Centers around a core system",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "(microkernel) with additional features and functionalities added as plugins",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "4. Microservices Architecture Pattern: Breaks down applications into",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "small, independent services that can be developed, deployed, and scaled",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "System Design Example: Airline Reservation System",
+      "page": 13
+    },
+    {
+      "level": "H2",
+      "text": "System Design Characteristics:",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "Availability, Reliability, Scalability: Vertical Scaling",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "Throughput",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "Horizontal and Vertical Scaling | System",
+      "page": 15
+    },
+    {
+      "level": "H3",
+      "text": "Design",
+      "page": 15
+    },
+    {
+      "level": "H3",
+      "text": "Characteristics of the Vertical Scaling",
+      "page": 17
+    },
+    {
+      "level": "H3",
+      "text": "Advantages and Disadvantages of Vertical Scaling",
+      "page": 18
+    },
+    {
+      "level": "H3",
+      "text": "increasing the capacity or performance of a system by adding more",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "machines or servers to distribute the workload across a larger number of",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "Characteristics of the horizontal scaling",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "Throughput",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Throughput is defined as the measure of amount of data transmitted successfully in a",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "system, in a certain amount of time. In simple terms, throughput is considered as how much",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "data is transmitted successfully over a period of time. The unit of measure for throughput is",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Latency",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "Latency is defined as the amount of time required for a single data to be delivered successfully. Latency is",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "Reasons for high Latency",
+      "page": 25
+    },
+    {
+      "level": "H3",
+      "text": "Network Delays",
+      "page": 25
+    },
+    {
+      "level": "H3",
+      "text": "Mathematical Calculation Process Delays",
+      "page": 25
+    },
+    {
+      "level": "H3",
+      "text": "Components Affecting Latency:",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "How to Reduce latency:",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "Use a content delivery network (CDN): CDNs help to cut down on latency. In order to shorten the distance between users and",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "Upgrading computer hardware/software: Improving or fine-tuning mechanical, software, or hardware components can help",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "Cache: A cache is a high-speed data storage layer used in computers that temporarily store large amounts of transient data. By",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "Availability in System Design",
+      "page": 27
+    },
+    {
+      "level": "H3",
+      "text": "Availability(%)",
+      "page": 27
+    },
+    {
+      "level": "H3",
+      "text": "Verify Automatic Failover",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "Use Geographic Redundancy",
+      "page": 28
+    },
+    {
+      "level": "H3",
+      "text": "Redundancy in System Design",
+      "page": 29
+    },
+    {
+      "level": "H3",
+      "text": "Redundancy is defined as a concept where certain entities are duplicated with aim to scale up the system and reduce over all",
+      "page": 29
+    },
+    {
+      "level": "H3",
+      "text": "down-time. For example, as seen in the image below, we are duplicating the server. So if one server goes down, then we have a",
+      "page": 29
+    },
+    {
+      "level": "H3",
+      "text": "Load Balancer",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "Way 1: Using backup load balancer technique: It contains primary and secondary load balancers involving concepts of 'floating ID'",
+      "page": 30
+    },
+    {
+      "level": "H3",
+      "text": "Consistency in System Design",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "Example: Account Transactions",
+      "page": 31
+    },
+    {
+      "level": "H3",
+      "text": "Performance vs Scalability",
+      "page": 32
+    },
+    {
+      "level": "H3",
+      "text": "Performance Optimization Techniques",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "•Caching:",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "Performance vs. Scalability",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Aspect",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Performance",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Scalability",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Definition",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Goal",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Concerns",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Key Techniques",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Scaling Approach",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Impact of Growth",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Resource Allocation",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Maintenance Complexity Generally lower complexity",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Example",
+      "page": 35
+    },
+    {
+      "level": "H3",
+      "text": "Latency",
+      "page": 36
+    },
+    {
+      "level": "H3",
+      "text": "If your latency is high: You press \"fire.\"",
+      "page": 36
+    },
+    {
+      "level": "H1",
+      "text": "1. Network Latency",
+      "page": 37
+    },
+    {
+      "level": "H1",
+      "text": "2. System Latency",
+      "page": 37
+    },
+    {
+      "level": "H3",
+      "text": "Factors that causes High Latency",
+      "page": 37
+    },
+    {
+      "level": "H3",
+      "text": "Geographical Distance: Data traveling long distances between distributed nodes can increase latency due to the inherent delays in",
+      "page": 37
+    },
+    {
+      "level": "H3",
+      "text": "Ping: This widely used tool sends data packets to a target server and measures the round-trip time (RTT), providing an estimate of",
+      "page": 38
+    },
+    {
+      "level": "H3",
+      "text": "Traceroute: This tool displays the path data packets take to reach a specific destination, revealing which network hops contribute",
+      "page": 38
+    },
+    {
+      "level": "H3",
+      "text": "MTR (traceroute with ping): Combines traceroute and ping functionality, showing both routing information and RTT at each hop",
+      "page": 38
+    },
+    {
+      "level": "H3",
+      "text": "Performance profiling tools: Specialized profiling tools track resource usage and execution times within a system, providing",
+      "page": 38
+    },
+    {
+      "level": "H3",
+      "text": "Application performance monitoring (APM) tools: Similar to network monitoring tools for networks, APM tools monitor the",
+      "page": 38
+    },
+    {
+      "level": "H3",
+      "text": "Problem Statement:",
+      "page": 39
+    },
+    {
+      "level": "H1",
+      "text": "1. Calculate One-Way Latency: One-way latency is the time taken for the data to travel from the client to the server:",
+      "page": 39
+    },
+    {
+      "level": "H3",
+      "text": "One-way latency = Distance / Propagation speed = 5570 KM / 200,000 Km/s = 27.85 ms",
+      "page": 39
+    },
+    {
+      "level": "H1",
+      "text": "2. Calculate RTT: The RTT is twice the one-way latency:",
+      "page": 39
+    },
+    {
+      "level": "H3",
+      "text": "RTT = 2 × 27.85ms = 55.7ms",
+      "page": 39
+    },
+    {
+      "level": "H3",
+      "text": "Throughput",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "1.Network Throughput: Throughput in networking is the quantity of data that can be sent via a network in a specific amount of",
+      "page": 40
+    },
+    {
+      "level": "H3",
+      "text": "Problem: A NoSQL database handles 18,000 read operations in 60 seconds.  Ans. 300 rps",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "Problem: You run a load test and observe the following log:",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "Problem. A system processes 5000 files in 2 hours. Ans. 41.67 filesp minute",
+      "page": 41
+    },
+    {
+      "level": "H3",
+      "text": "Aspect",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Throughput",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Latency",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Definition",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Measurement Unit",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Relationship",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Example",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Factors affecting Throughput",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "Methods to improve Throughput",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "6.Caching Strategies:",
+      "page": 44
+    },
+    {
+      "level": "H3",
+      "text": "Consistency",
+      "page": 45
+    },
+    {
+      "level": "H3",
+      "text": "Availability",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "High Availability: Makes sure that the system is up and running for most of the time needs. High availability systems are those",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "Partial Availability: It is not correct to consider that this system is either available or unavailable because some sections may be",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "Feature",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Consistency",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Availability",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Definition",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Primary Goal",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Response Behavior",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Trade-offs",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Typical Use Cases",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "CAP Theorem Focus",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Complexity",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Failure Handling",
+      "page": 47
+    },
+    {
+      "level": "H3",
+      "text": "Benefits of Consistency",
+      "page": 48
+    },
+    {
+      "level": "H3",
+      "text": "Use Cases of Consistency",
+      "page": 48
+    },
+    {
+      "level": "H3",
+      "text": "Benefits of Availability",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "Service Continuity: Maintains the system to function well at all times as expected. High availability is required for applications that",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "User Experience: Works within the framework of user demands requirement, and assurance of timely feedback to users thereby",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "Resilience: Can work with one or more nodes of a cluster being unavailable or the communication between nodes being severed",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "Use Cases of Availability",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "Social Media Platforms: That users can always upload and download material. Consumers of content shared via the social media",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "Content Delivery Networks (CDNs): Offering maximum access of information to the world population. CDNs provide the content",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "Modularity",
+      "page": 50
+    },
+    {
+      "level": "H3",
+      "text": "Examples",
+      "page": 52
+    },
+    {
+      "level": "H1",
+      "text": "1. Ecommerce website",
+      "page": 52
+    },
+    {
+      "level": "H1",
+      "text": "2. Patient monitoring system",
+      "page": 52
+    },
+    {
+      "level": "H1",
+      "text": "3. Learning management system",
+      "page": 52
+    },
+    {
+      "level": "H3",
+      "text": "Characteristics of Modularity",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Interchangeability: Modules can be swapped or upgraded without affecting the overall system functionality, promoting",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Key Components of Modular Design",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Modules: These are the smaller, separate components that comprise the system as a whole. Every module is self-contained, has clearly",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Interfaces: These are where modules can communicate with one another. Interfaces, which can be software, mechanical, or electrical",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Integration: This involves integrating the various modules to form an integrated unit and testing the system as a whole to make sure",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Documentation: This includes all of the technical and operational information about the system, including schematics, manuals, and",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Benefits of Modularity",
+      "page": 54
+    },
+    {
+      "level": "H3",
+      "text": "Maintainability",
+      "page": 55
+    },
+    {
+      "level": "H3",
+      "text": "Modularity: It's organized into different factors or modules, allowing maintainers to understand and modify individual pieces without",
+      "page": 55
+    },
+    {
+      "level": "H3",
+      "text": "Readability: Its Codebase is clear, terse, and readable, making it easier for maintainers or other team members to understand and modify",
+      "page": 55
+    },
+    {
+      "level": "H3",
+      "text": "Error Handling: It's designed to handle problems or issues effectively, furnishing meaningful error dispatches and avoiding disastrous",
+      "page": 55
+    },
+    {
+      "level": "H3",
+      "text": "Measuring Maintainability",
+      "page": 55
+    },
+    {
+      "level": "H3",
+      "text": "Code Duplication: The percentage of duplicated code present in the system can be an indicator of maintainability. Code duplication occurs when the",
+      "page": 56
+    },
+    {
+      "level": "H3",
+      "text": "Maintainability Index: It provides an overall score that represents the maintainability of a specific component/Code module/Entire system. The",
+      "page": 56
+    },
+    {
+      "level": "H3",
+      "text": "Test Coverage: It measures the extent to which automated tests cover the codebase, It helps prevent regressions from being introduced. Test",
+      "page": 56
+    },
+    {
+      "level": "H3",
+      "text": "Team Collaboration: A strong collaborative culture within the development team helps them share knowledge with each other, perform Knowledge",
+      "page": 56
+    },
+    {
+      "level": "H3",
+      "text": "Time and Resource constraints: It's important to balance between speed of development as well as speed of maintainability. A rush by the",
+      "page": 56
+    },
+    {
+      "level": "H3",
+      "text": "Code Churn: It measures the frequency of changes to a code module over time using Version Control's data. Active maintenance is essential for",
+      "page": 56
+    },
+    {
+      "level": "H3",
+      "text": "Cyclomatic Complexity: It measures the complexity of a code module. Higher complexity is an indication that the code is more complicated to",
+      "page": 56
+    },
+    {
+      "level": "H3",
+      "text": "Formula for Calculating Cyclomatic Complexity",
+      "page": 57
+    },
+    {
+      "level": "H3",
+      "text": "M = E - N + 2P",
+      "page": 57
+    },
+    {
+      "level": "H3",
+      "text": "M = E - N + P",
+      "page": 57
+    },
+    {
+      "level": "H3",
+      "text": "M = E - N + 2",
+      "page": 57
+    },
+    {
+      "level": "H3",
+      "text": "How to achieve high Maintainability",
+      "page": 59
+    },
+    {
+      "level": "H1",
+      "text": "1. Follow Design Patterns:",
+      "page": 59
+    },
+    {
+      "level": "H1",
+      "text": "2. Code Consistency:",
+      "page": 59
+    },
+    {
+      "level": "H1",
+      "text": "3. Conduct Code Reviews:",
+      "page": 59
+    },
+    {
+      "level": "H1",
+      "text": "4. Test-Driven Development (TDD):",
+      "page": 59
+    },
+    {
+      "level": "H1",
+      "text": "5. Documentation:",
+      "page": 59
+    },
+    {
+      "level": "H1",
+      "text": "6. Plan for Change:",
+      "page": 59
+    },
+    {
+      "level": "H1",
+      "text": "7. Automate Testing and Deployment:",
+      "page": 59
+    },
+    {
+      "level": "H3",
+      "text": "Clean Code Principles",
+      "page": 60
+    },
+    {
+      "level": "H3",
+      "text": "Enhanced Maintainability: Clean code is inherently easier to maintain and update, reducing the time",
+      "page": 61
+    },
+    {
+      "level": "H3",
+      "text": "Improved Readability: Clean code is easy for new developers to understand and contribute to a",
+      "page": 61
+    },
+    {
+      "level": "H3",
+      "text": "Increased Efficiency: Well-organized codebases are less prone to bugs and issues, facilitating a",
+      "page": 61
+    },
+    {
+      "level": "H3",
+      "text": "Better Collaboration: Clean code principles encourage practices that make collaborative work more",
+      "page": 61
+    },
+    {
+      "level": "H3",
+      "text": "Principles",
+      "page": 62
+    },
+    {
+      "level": "H3",
+      "text": "Meaningful Names: Use descriptive, specific names for variables, functions, and classes",
+      "page": 62
+    },
+    {
+      "level": "H3",
+      "text": "Keep It Simple, Stupid (KISS): Avoid unnecessary complexity. Aim for simplicity in",
+      "page": 62
+    },
+    {
+      "level": "H3",
+      "text": "Don’t Repeat Yourself (DRY): Minimize duplication in your codebase to ensure that",
+      "page": 62
+    },
+    {
+      "level": "H3",
+      "text": "Single Responsibility Principle (SRP): Each module, class, or function should have one",
+      "page": 62
+    },
+    {
+      "level": "H3",
+      "text": "Readability Over Cleverness: Code should be straightforward and easy to read rather",
+      "page": 62
+    },
+    {
+      "level": "H3",
+      "text": "How to Write Clean Code",
+      "page": 63
+    },
+    {
+      "level": "H3",
+      "text": "Writing clean code is an iterative process that involves constant refinement and adherence to best",
+      "page": 63
+    },
+    {
+      "level": "H3",
+      "text": "practices. Following points must be kept in mind:",
+      "page": 63
+    },
+    {
+      "level": "H3",
+      "text": "Follow Style Guidelines: Adhere to your language’s style guidelines and conventions for",
+      "page": 63
+    },
+    {
+      "level": "H3",
+      "text": "Code Reviews: Participate in code reviews to receive feedback and learn from others’ approaches to",
+      "page": 63
+    },
+    {
+      "level": "H3",
+      "text": "Clean Code Best Practices",
+      "page": 64
+    },
+    {
+      "level": "H3",
+      "text": "To further embed clean code principles in development process, consider these best",
+      "page": 64
+    },
+    {
+      "level": "H3",
+      "text": "practices:",
+      "page": 64
+    },
+    {
+      "level": "H3",
+      "text": "Write Unit Tests: Ensure your code is testable and covered by unit tests to maintain",
+      "page": 64
+    },
+    {
+      "level": "H3",
+      "text": "Document Thoughtfully: While clean code should be self-explanatory, judicious use of",
+      "page": 64
+    },
+    {
+      "level": "H3",
+      "text": "Use Version Control Wisely: Leverage version control systems to manage changes and",
+      "page": 64
+    },
+    {
+      "level": "H3",
+      "text": "Tips to Write Cleaner Code",
+      "page": 65
+    },
+    {
+      "level": "H3",
+      "text": "Enhancing the cleanliness of your code is a continuous journey. Here are some tips to guide",
+      "page": 65
+    },
+    {
+      "level": "H3",
+      "text": "you along the way:",
+      "page": 65
+    },
+    {
+      "level": "H3",
+      "text": "Learn from the Masters: Study code from experienced developers and open-source projects",
+      "page": 65
+    },
+    {
+      "level": "H3",
+      "text": "Clean code principles",
+      "page": 66
+    },
+    {
+      "level": "H1",
+      "text": "1. Single Responsibility Principle (SRP)",
+      "page": 66
+    },
+    {
+      "level": "H1",
+      "text": "2. Separation of Concerns (SoC)",
+      "page": 66
+    },
+    {
+      "level": "H1",
+      "text": "3. Modularity",
+      "page": 66
+    },
+    {
+      "level": "H1",
+      "text": "4. DRY (Don’t Repeat Yourself)",
+      "page": 66
+    },
+    {
+      "level": "H1",
+      "text": "5. High Cohesion & Low Coupling",
+      "page": 67
+    },
+    {
+      "level": "H3",
+      "text": "Low coupling: Components should have minimal dependencies",
+      "page": 67
+    },
+    {
+      "level": "H1",
+      "text": "6. Well-Defined Interfaces & APIs",
+      "page": 67
+    },
+    {
+      "level": "H1",
+      "text": "7. Defensive Design",
+      "page": 67
+    },
+    {
+      "level": "H1",
+      "text": "8. Observability",
+      "page": 67
+    },
+    {
+      "level": "H1",
+      "text": "9. Consistency",
+      "page": 67
+    },
+    {
+      "level": "H1",
+      "text": "10. Scalability & Performance Awareness",
+      "page": 67
+    },
+    {
+      "level": "H1",
+      "text": "11. Testability",
+      "page": 67
+    },
+    {
+      "level": "H3",
+      "text": "Principle",
+      "page": 68
+    },
+    {
+      "level": "H3",
+      "text": "Benefit",
+      "page": 68
+    },
+    {
+      "level": "H3",
+      "text": "SRP",
+      "page": 68
+    },
+    {
+      "level": "H3",
+      "text": "DRY",
+      "page": 68
+    },
+    {
+      "level": "H3",
+      "text": "CI/CD Pipeline",
+      "page": 69
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Integration (CI):",
+      "page": 69
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Delivery (CD):",
+      "page": 69
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Integration",
+      "page": 70
+    },
+    {
+      "level": "H3",
+      "text": "Shared Repository: All developers merge changes—big or small—into a central branch regularly",
+      "page": 70
+    },
+    {
+      "level": "H3",
+      "text": "Automated Pipeline:",
+      "page": 70
+    },
+    {
+      "level": "H3",
+      "text": "Benefits of Continuous Integration",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "Smaller and Easier Code Changes:  With every code change being pushed to version",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "control immediately, the CI/CD pipeline has to deal with smaller code changes and",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "Easier Debugging",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "A CI-based pipeline facilitates fault isolation AKA the practice of formulating systems",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "Faster Product Releases",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "A CI-powered pipeline is a continuously moving system in which failures are detected",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "Lighter Backlog",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "As explained above, CI enables quicker bug identification and debugging, all within the",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "Increased Transparency and Accountability",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "Frequent code commits lead to immediate and frequent feedback from the automated",
+      "page": 71
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Deployment",
+      "page": 72
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Deployment is the next step after Continuous Delivery—automatically releases code",
+      "page": 72
+    },
+    {
+      "level": "H3",
+      "text": "Fully Automated Release:",
+      "page": 72
+    },
+    {
+      "level": "H3",
+      "text": "Test-Driven Automation:",
+      "page": 72
+    },
+    {
+      "level": "H3",
+      "text": "Zero Human Intervention:",
+      "page": 72
+    },
+    {
+      "level": "H3",
+      "text": "Benefits of Continuous Deployment",
+      "page": 73
+    },
+    {
+      "level": "H3",
+      "text": "Best Fit For:",
+      "page": 73
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Delivery vs Continuous Deployment",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Aspect",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Delivery",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Continuous Deployment",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Automation Level",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Approval Required",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Deployment Trigger",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Use Case",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Tooling & Maturity",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Risk Management",
+      "page": 74
+    },
+    {
+      "level": "H3",
+      "text": "Pipeline Flow:",
+      "page": 75
+    },
+    {
+      "level": "H3",
+      "text": "CI/CD Tools",
+      "page": 76
+    },
+    {
+      "level": "H3",
+      "text": "Configuration Management - Ansible, Puppet, Chef",
+      "page": 76
+    },
+    {
+      "level": "H3",
+      "text": "Code Management - GitHub, GitLab, BitBucket",
+      "page": 76
+    },
+    {
+      "level": "H3",
+      "text": "Build - Jenkins, Bamboo, TeamCity",
+      "page": 76
+    },
+    {
+      "level": "H3",
+      "text": "Testing - Selenium, JUnit, SonarQube",
+      "page": 76
+    },
+    {
+      "level": "H3",
+      "text": "Deployment - Argo, Spinnaker, Octopus Deploy",
+      "page": 76
+    },
+    {
+      "level": "H3",
+      "text": "Importance of CI/CD in Modern Software Development",
+      "page": 77
+    },
+    {
+      "level": "H3",
+      "text": "Faster Time to Market",
+      "page": 77
+    },
+    {
+      "level": "H3",
+      "text": "Improved Code Quality:",
+      "page": 77
+    },
+    {
+      "level": "H3",
+      "text": "Increased Collaboration and Efficiency:",
+      "page": 77
+    },
+    {
+      "level": "H3",
+      "text": "Reduced Risks:",
+      "page": 77
+    },
+    {
+      "level": "H3",
+      "text": "Early Bug Detection: Frequent integration and testing catch bugs early in the development cycle, reducing the risk of critical failures in",
+      "page": 77
+    },
+    {
+      "level": "H3",
+      "text": "Rollback Capability: Automated deployments often include easy rollback options, minimizing the impact of any issues that do make it to",
+      "page": 77
+    },
+    {
+      "level": "H3",
+      "text": "Consistent and Reliable Releases:",
+      "page": 78
+    },
+    {
+      "level": "H3",
+      "text": "Scalability and Flexibility:",
+      "page": 78
+    },
+    {
+      "level": "H3",
+      "text": "Handling Load: CI/CD pipelines can handle multiple builds and deployments simultaneously, making it easier to scale",
+      "page": 78
+    },
+    {
+      "level": "H3",
+      "text": "Adapting to Changes: The flexibility of CI/CD pipelines allows teams to adapt quickly to changes in requirements or",
+      "page": 78
+    },
+    {
+      "level": "H3",
+      "text": "Steps for Designing a CI/CD Pipeline",
+      "page": 79
+    },
+    {
+      "level": "H3",
+      "text": "Step 1: Assess Current Development Process",
+      "page": 79
+    },
+    {
+      "level": "H3",
+      "text": "Step 2: Choose Tools and Technologies",
+      "page": 79
+    },
+    {
+      "level": "H3",
+      "text": "Step 3: Define Pipeline Stages",
+      "page": 79
+    },
+    {
+      "level": "H3",
+      "text": "Step 4: Implement Automated Testing",
+      "page": 79
+    },
+    {
+      "level": "H3",
+      "text": "Step 5: Set Up Continuous Integration",
+      "page": 80
+    },
+    {
+      "level": "H3",
+      "text": "Step 6: Implement Continuous Delivery",
+      "page": 80
+    },
+    {
+      "level": "H3",
+      "text": "Step 7: Implement Continuous Deployment (Optional)",
+      "page": 80
+    },
+    {
+      "level": "H3",
+      "text": "Step 8: Monitor and Improve",
+      "page": 80
+    },
+    {
+      "level": "H3",
+      "text": "Step 9: Security and Compliance",
+      "page": 80
+    },
+    {
+      "level": "H3",
+      "text": "Step 10: Documentation and Training",
+      "page": 80
+    },
+    {
+      "level": "H3",
+      "text": "CAP Theorem",
+      "page": 81
+    },
+    {
+      "level": "H1",
+      "text": "1. Consistency: Consistency defines that all clients see the same data simultaneously, no matter which node they connect to in",
+      "page": 83
+    },
+    {
+      "level": "H3",
+      "text": "explaination of the above Diagram:",
+      "page": 83
+    },
+    {
+      "level": "H1",
+      "text": "2. Availability: Availability defines that all non-failing nodes in a distributed system return a response for all read and write",
+      "page": 84
+    },
+    {
+      "level": "H3",
+      "text": "Explanation of the above Diagram:",
+      "page": 84
+    },
+    {
+      "level": "H1",
+      "text": "3. Partition Tolerance: Partition Tolerance defines that the system continues to operate despite arbitrary message loss or",
+      "page": 85
+    },
+    {
+      "level": "H3",
+      "text": "Explanation of the above Diagram:",
+      "page": 85
+    },
+    {
+      "level": "H1",
+      "text": "1. CA System",
+      "page": 87
+    },
+    {
+      "level": "H1",
+      "text": "2. CP System",
+      "page": 87
+    },
+    {
+      "level": "H1",
+      "text": "3. AP System",
+      "page": 87
+    },
+    {
+      "level": "H3",
+      "text": "IMPLICATIONS::",
+      "page": 87
+    },
+    {
+      "level": "H3",
+      "text": "EXAMPLE",
+      "page": 88
+    },
+    {
+      "level": "H1",
+      "text": "1. Banking Transactions (CP System)",
+      "page": 89
+    },
+    {
+      "level": "H3",
+      "text": "Problem Statement:",
+      "page": 89
+    },
+    {
+      "level": "H1",
+      "text": "2. Social Media Newsfeed (AP System)",
+      "page": 89
+    },
+    {
+      "level": "H3",
+      "text": "Advantages of CAP Theorem in System Design",
+      "page": 90
+    },
+    {
+      "level": "H1",
+      "text": "1. Provides a Framework for Decision-Making",
+      "page": 90
+    },
+    {
+      "level": "H1",
+      "text": "2. Promotes Understanding of Trade-offs",
+      "page": 90
+    },
+    {
+      "level": "H1",
+      "text": "3. Guides System Architecture and Technology Selection",
+      "page": 90
+    },
+    {
+      "level": "H1",
+      "text": "4. Enhances System Resilience and Performance",
+      "page": 90
+    },
+    {
+      "level": "H3",
+      "text": "Disadvantages of CAP Theorem in System Design",
+      "page": 90
+    },
+    {
+      "level": "H3",
+      "text": "Oversimplification",
+      "page": 90
+    },
+    {
+      "level": "H3",
+      "text": "Abstract Trade-offs",
+      "page": 90
+    },
+    {
+      "level": "H3",
+      "text": "Potential Misinterpretation",
+      "page": 90
+    },
+    {
+      "level": "H3",
+      "text": "CONSISTENCY PATTERN",
+      "page": 91
+    },
+    {
+      "level": "H3",
+      "text": "Importance of Consistency in System Design",
+      "page": 91
+    },
+    {
+      "level": "H1",
+      "text": "1. Correctness",
+      "page": 91
+    },
+    {
+      "level": "H1",
+      "text": "2. Trust and Reliability",
+      "page": 91
+    },
+    {
+      "level": "H1",
+      "text": "3. Data Integrity",
+      "page": 91
+    },
+    {
+      "level": "H1",
+      "text": "4. Concurrency Control",
+      "page": 91
+    },
+    {
+      "level": "H1",
+      "text": "5. User Experience",
+      "page": 91
+    },
+    {
+      "level": "H1",
+      "text": "6. Predictability",
+      "page": 91
+    },
+    {
+      "level": "H3",
+      "text": "Consistency in CAP",
+      "page": 92
+    },
+    {
+      "level": "H3",
+      "text": "Types of Consistency Models",
+      "page": 92
+    },
+    {
+      "level": "H3",
+      "text": "Strong Consistency",
+      "page": 92
+    },
+    {
+      "level": "H3",
+      "text": "Eventual Consistency",
+      "page": 93
+    },
+    {
+      "level": "H3",
+      "text": "Causal Consistency",
+      "page": 93
+    },
+    {
+      "level": "H3",
+      "text": "Read-Your-Writes Consistency",
+      "page": 93
+    },
+    {
+      "level": "H3",
+      "text": "Monotonic Consistency",
+      "page": 93
+    },
+    {
+      "level": "H1",
+      "text": "1. ensures that if a client observes a particular order of updates (reads or writes) to a data item, it will never observe a conflicting",
+      "page": 93
+    },
+    {
+      "level": "H1",
+      "text": "2. prevents the system from reverting to previous states or seeing inconsistent sequences of updates, which helps maintain data",
+      "page": 93
+    },
+    {
+      "level": "H3",
+      "text": "Monotonic Reads and Writes",
+      "page": 94
+    },
+    {
+      "level": "H1",
+      "text": "2. ensure that clients never see older values in subsequent reads, while monotonic writes guarantee that writes from a single client are",
+      "page": 94
+    },
+    {
+      "level": "H3",
+      "text": "Challenges with maintaining Consistency",
+      "page": 94
+    },
+    {
+      "level": "H3",
+      "text": "Techniques for Ensuring Consistency",
+      "page": 94
+    },
+    {
+      "level": "H3",
+      "text": "Two-Phase Commit (2PC)",
+      "page": 94
+    },
+    {
+      "level": "H3",
+      "text": "Quorum-Based Replication",
+      "page": 95
+    },
+    {
+      "level": "H3",
+      "text": "Example−",
+      "page": 95
+    },
+    {
+      "level": "H3",
+      "text": "Consensus Algorithms",
+      "page": 95
+    },
+    {
+      "level": "H3",
+      "text": "Conflict Resolution Strategies",
+      "page": 95
+    },
+    {
+      "level": "H3",
+      "text": "Trade-offs in Consistency",
+      "page": 96
+    },
+    {
+      "level": "H3",
+      "text": "Consistency vs. Availability",
+      "page": 96
+    },
+    {
+      "level": "H3",
+      "text": "Consistency vs. Performance",
+      "page": 96
+    },
+    {
+      "level": "H3",
+      "text": "Consistency vs. Scalability",
+      "page": 96
+    },
+    {
+      "level": "H3",
+      "text": "Real-World Examples",
+      "page": 97
+    },
+    {
+      "level": "H3",
+      "text": "Example 1: Banking Systems",
+      "page": 97
+    },
+    {
+      "level": "H3",
+      "text": "Example 2: Social Media Platforms",
+      "page": 97
+    },
+    {
+      "level": "H3",
+      "text": "Example 3: E-Commerce Websites",
+      "page": 97
+    },
+    {
+      "level": "H3",
+      "text": "Differences",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Aspect",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Weak Consistency",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Eventual Consistency",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Synchronization",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Convergence Guarantee",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Divergence Tolerance",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Use Cases",
+      "page": 98
+    },
+    {
+      "level": "H3",
+      "text": "Differences",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Parameters",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Strong Consistency",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Eventual Consistency",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Definition",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Data Freshness",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Latency",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Availability",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Partition Tolerance",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Complexity",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Use Cases",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Performance",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Scalability",
+      "page": 99
+    },
+    {
+      "level": "H3",
+      "text": "Read/Write Operations",
+      "page": 99
+    }
+  ]
+}
